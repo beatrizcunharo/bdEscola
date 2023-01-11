@@ -35,11 +35,10 @@ public class ConsultarExcluirDisciplina extends javax.swing.JFrame {
         }
 
         for (int i = 0; i < lista.size(); i++) {
-            String campo[] = new String[4];
+            String campo[] = new String[3];
             campo[0] = lista.get(i).getCod_disciplina()+ "";
             campo[1] = lista.get(i).getNome_disciplina();
-            campo[2] = lista.get(i).getEmenta_disciplina();
-            campo[3] = lista.get(i).getObs_disciplina();
+            campo[2] = lista.get(i).getObs_disciplina();
 
             modelo.addRow(campo);
 
@@ -57,11 +56,10 @@ public class ConsultarExcluirDisciplina extends javax.swing.JFrame {
         }
 
         for (int i = 0; i < lista.size(); i++) {
-            String campo[] = new String[4];
+            String campo[] = new String[3];
             campo[0] = lista.get(i).getCod_disciplina()+ "";
             campo[1] = lista.get(i).getNome_disciplina();
-            campo[2] = lista.get(i).getEmenta_disciplina();
-            campo[3] = lista.get(i).getObs_disciplina();
+            campo[2] = lista.get(i).getObs_disciplina();
 
             modelo.addRow(campo);
 
@@ -106,7 +104,7 @@ public class ConsultarExcluirDisciplina extends javax.swing.JFrame {
 
             },
             new String [] {
-                "Cód. Disc.", "Nome", "Ementa", "Obs"
+                "Cód. Disc.", "Nome", "Obs"
             }
         ));
         jScrollPane1.setViewportView(tabela);

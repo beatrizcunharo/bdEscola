@@ -3,12 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/D:/Documentos/Projects/Escola/src/connection/Connection.java</file>
-            <file>file:/D:/Documentos/Projects/Escola/src/escola/Escola.java</file>
-            <file>file:/D:/Documentos/Projects/Escola/src/escola/Login.java</file>
-            <file>file:/D:/Documentos/Projects/Escola/src/escola/Dao.java</file>
-            <file>file:/D:/Documentos/Projects/Escola/src/escola/Menu.java</file>
-            <file>file:/D:/Documentos/Projects/Escola/src/escola/LoginModel.java</file>
+            <file>file:/D:/Documentos/Projects/Escola/src/layout/InserirTurma.java</file>
+            <file>file:/D:/Documentos/Projects/Escola/src/layout/ConsultarExcluirTurma.java</file>
+            <file>file:/D:/Documentos/Projects/Escola/src/layout/InserirDisciplina.java</file>
+            <file>file:/D:/Documentos/Projects/Escola/src/layout/AlterarDisciplina.java</file>
+            <file>file:/D:/Documentos/Projects/Escola/src/layout/AlterarTurma.java</file>
         </group>
     </open-files>
 </project-private>

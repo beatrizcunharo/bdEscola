@@ -7,7 +7,6 @@ package model;
 public class DisciplinaModel {
     private int cod_disciplina;
     private String nome_disciplina;
-    private String ementa_disciplina;
     private String obs_disciplina;
 
     /**
@@ -36,20 +35,6 @@ public class DisciplinaModel {
      */
     public void setNome_disciplina(String nome_disciplina) {
         this.nome_disciplina = nome_disciplina;
-    }
-
-    /**
-     * @return the ementa_disciplina
-     */
-    public String getEmenta_disciplina() {
-        return ementa_disciplina;
-    }
-
-    /**
-     * @param ementa_disciplina the ementa_disciplina to set
-     */
-    public void setEmenta_disciplina(String ementa_disciplina) {
-        this.ementa_disciplina = ementa_disciplina;
     }
 
     /**

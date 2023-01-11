@@ -20,7 +20,7 @@ import model.DisciplinaModel;
  */
 public class DisciplinaDao {
     public boolean insertDisciplina (DisciplinaModel d) {
-        String SQL = "insert into Disciplina (nome_disciplina, ementa_disciplina, obs_disciplina) values(?,?,?)";
+        String SQL = "insert into Disciplina (nome_disciplina, obs_disciplina) values(?,?)";
         Connection conn = null;
         PreparedStatement pst = null;
         try {
@@ -28,8 +28,7 @@ public class DisciplinaDao {
             
             pst = conn.prepareStatement(SQL);
             pst.setString(1, d.getNome_disciplina());
-            pst.setString(2, d.getEmenta_disciplina());
-            pst.setString(3, d.getObs_disciplina());
+            pst.setString(2, d.getObs_disciplina());
             pst.executeUpdate();
         } catch (SQLException e) {
             System.out.println("Erro na conexão ao inserir: " + e.getMessage());
@@ -39,16 +38,15 @@ public class DisciplinaDao {
     }
 
     public boolean alterarDisciplina(DisciplinaModel d) {
-        String SQL = "update Disciplina set nome_disciplina=?,ementa_disciplina=?,obs_disciplina=? where cod_disciplina=?";
+        String SQL = "update Disciplina set nome_disciplina=?,obs_disciplina=? where cod_disciplina=?";
         Connection conn = null;
         PreparedStatement pst = null;
         try {
             conn = ConnectionFactory.connect();
             pst = conn.prepareStatement(SQL);
              pst.setString(1, d.getNome_disciplina());
-             pst.setString(2, d.getEmenta_disciplina());
-             pst.setString(3, d.getObs_disciplina());
-             pst.setInt(4, d.getCod_disciplina());
+             pst.setString(2, d.getObs_disciplina());
+             pst.setInt(3, d.getCod_disciplina());
        
             
             pst.executeUpdate();
@@ -78,8 +76,7 @@ public class DisciplinaDao {
                 
                 obj.setCod_disciplina(tabela.getInt(1));
                 obj.setNome_disciplina(tabela.getString(2));
-                obj.setEmenta_disciplina(tabela.getString(3));
-                obj.setObs_disciplina(tabela.getString(4));
+                obj.setObs_disciplina(tabela.getString(3));
                 lista.add(obj);
             }
 
@@ -109,8 +106,7 @@ public class DisciplinaDao {
                 
                 obj.setCod_disciplina(tabela.getInt(1));
                 obj.setNome_disciplina(tabela.getString(2));
-                obj.setEmenta_disciplina(tabela.getString(3));
-                obj.setObs_disciplina(tabela.getString(4));
+                obj.setObs_disciplina(tabela.getString(3));
                 lista.add(obj);
             }
 
